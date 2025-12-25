@@ -60,9 +60,8 @@ func Run() error{
 		for range time.NewTicker(time.Second * 3).C{
 			for _, room := range w.Rooms{
 				room.Peers.DispatchKeyFrames()
-		}
-	}
-		
+			}
+		}		
 	}
 
 }
